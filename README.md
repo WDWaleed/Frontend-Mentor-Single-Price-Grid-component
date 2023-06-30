@@ -18,13 +18,13 @@ This is a solution to the [Single price grid component challenge on Frontend Men
 ## Overview
 ### Screenshot
 
-![Pricing Card Challenge](./Screenshot Frontend Mentor Pricing Card Challenge 2023-06-29 at 09-21-00.png)
+![Pricing Card Challenge](https://github.com/WDWaleed/Frontend-Mentor-Single-Price-Grid-component/blob/main/Screenshot%20Frontend%20Mentor%20Pricing%20Card%20Challenge%202023-06-29%20at%2009-21-00.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo](https://github.com/WDWaleed/Frontend-Mentor-Single-Price-Grid-component)
+- Live Site URL: [WDWaleed.github.io](https://wdwaleed.github.io/Frontend-Mentor-Single-Price-Grid-component/)
 
 ## My process
 
