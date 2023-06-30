@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: Karla, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root {
+  --primary-clr-cyan: hsl(179, 62%, 43%);
+  --primary-clr-yellow: hsl(71, 73%, 54%);
+  --neutral-1-gray: hsl(204, 43%, 93%);
+  --neutral-2-grayish-blue: hsl(218, 22%, 67%);
+}
+
+.pricing-card {
+  margin: 1rem auto;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  box-shadow: 1px 6px 15px rgba(0, 0, 0, .25);
+  overflow: hidden;
+  display: grid;
+  grid-template-areas:
+    "topbox"
+    "bleft"
+    "bright";
+}
+
+/* SHARED STYLES */
+
+.box {
+  padding: 1rem 2rem;
+}
+
+.whiteclr {
+  color: #fefefe;
+}
+
+h2, h3 {
+  font-weight: 700;
+}
+
+p, span {
+  font-weight: 400;
+}
+
+P {
+  line-height: 1.5rem;
+}
+
+/* TOP STYLES */
+
+.topbox {
+  grid-area: topbox;
+}
+
+.topbox h2 {
+  color: var(--primary-clr-cyan);
+}
+
+.topbox h3 {
+  color: var(--primary-clr-yellow);
+}
+
+.topbox p {
+  color: var(--primary-clr-cyan);
+}
+
+/* BOTTOM LEFT STYLES */
+
+.bleft {
+  grid-area: bleft;
+  background-color: var(--primary-clr-cyan);
+}
+
+.monthly-price {
+  max-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  height: fit-content;
+  gap: 0.5rem;
+}
+
+.monthly-price h3 {
+  font-size: 2.25rem;
+}
+
+.monthly-price span {
+  color: var(--neutral-1-gray);
+  filter: brightness(.9);
+}
+
+.bleft p {
+  color: var(--neutral-1-gray);
+}
+
+button {
+  display: block;
+  padding: .9rem 0;
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary-clr-yellow);
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+
+  cursor: pointer;
+  box-shadow: 1px 3px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 150ms ease-in-out;
+}
+
+
+button:hover {
+  transform: scale(1.05);
+}
+
+
+/* BOTTOM RIGHT STYLES */
+
+.bright {
+  grid-area: bright;
+  background-color: var(--neutral-2-grayish-blue);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: var(--neutral-1-gray);
+}
+
+/* FOR LARGE SCREENS */
+
+@media screen and (width > 600px) {
+  .pricing-card {
+    max-width: 630px;
+    height: 450px;
+    margin: 5rem auto 0;
+    grid-template: 45% 55% / repeat(2, 1fr);
+    grid-template-areas:
+      "topbox topbox"
+      "bleft bright";
+  }
+}
