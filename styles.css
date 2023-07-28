@@ -18,7 +18,7 @@ html {
   margin: 1rem auto;
   max-width: 400px;
   border-radius: 0.5rem;
-  box-shadow: 1px 6px 15px rgba(0, 0, 0, .25);
+  box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.25);
   overflow: hidden;
   display: grid;
   grid-template-areas:
@@ -37,11 +37,13 @@ html {
   color: #fefefe;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-weight: 700;
 }
 
-p, span {
+p,
+span {
   font-weight: 400;
 }
 
@@ -88,7 +90,7 @@ P {
 
 .monthly-price span {
   color: var(--neutral-1-gray);
-  filter: brightness(.9);
+  filter: brightness(0.9);
 }
 
 .bleft p {
@@ -97,7 +99,7 @@ P {
 
 button {
   display: block;
-  padding: .9rem 0;
+  padding: 0.9rem 0;
   width: 100%;
   text-align: center;
   background-color: var(--primary-clr-yellow);
@@ -110,11 +112,9 @@ button {
   transition: transform 150ms ease-in-out;
 }
 
-
 button:hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
-
 
 /* BOTTOM RIGHT STYLES */
 
